@@ -1,3 +1,3 @@
 #Python for Data Engineer
 
-*Advanced examples, tools and remember code for data engineer work*
+*Advanced samples, tools and remember code for data engineer work*
