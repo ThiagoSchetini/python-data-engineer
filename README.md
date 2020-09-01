@@ -1,8 +1,8 @@
-#Python for Data Engineer
+# Python for Data Engineer
 
 *Advanced samples and code remember for data engineer work*
 
-###Python virtual env create with *venv*:
+### Python virtual env create with *venv*:
 
 using your IDE or manually, create the venv like:
 
@@ -21,7 +21,7 @@ manual deactivate *(if you are not using an IDE)*:
 
 	deactivate
 
-###How to package (we use the modern setuptools):
+### How to package (we use the modern setuptools):
 
 from root folder:
 
