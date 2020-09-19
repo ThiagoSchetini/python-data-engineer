@@ -1,7 +1,6 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+# sample configuration on: https://github.com/pypa/sampleproject/blob/master/setup.py
 
 setup(
     name="python-data-engineer",
@@ -9,16 +8,24 @@ setup(
     author="Thiago Schetini",
     author_email="thiagoschetini@gmail.com",
     description="Coding for data engineer with Python",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
     url="https://github.com/ThiagoSchetini/python-data-engineer",
-    packages=find_packages(),
+    
+    # auto find packages inside 'src' to compile/pkg
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
 
     # more classifiers: https://pypi.org/classifiers/
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: Implementation :: PyPy",
         "Operating System :: POSIX :: Linux",
     ],
 
-    python_requires='>=3.8',
+    python_requires='>=3.6',
+    
+    install_requires=[
+        'py4j>=0.10.9',
+        'pyspark>=3.0.1'
+    ],
+    
+    data_files=[('sample_data', ['data/sample_data'])]
 )
