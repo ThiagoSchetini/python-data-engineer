@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
 
 # sample configuration on: https://github.com/pypa/sampleproject/blob/master/setup.py
+# official setuptools: https://setuptools.readthedocs.io/en/latest/setuptools.html
 
 setup(
     name="python-data-engineer",
